@@ -1,0 +1,82 @@
+
+<div class='wrapper'>
+    <div class="head" >TO DO APP...</div>
+    <div class="input">
+        <input class="input0" type="text" [(ngModel)]="inputval"/>
+        <select [(ngModel)]="option">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+    
+        <button class="search" (click)="getval()">add</button>
+    </div>
+    <div class="output">
+    <div>todo
+        <div class="todos" *ngFor="let item of listofinput;let i=index">
+            <div class="todo">
+                <div>
+                    <p>{{i}}.{{item.name}}</p>
+                </div>
+                <div class="buts">
+                    <button class="but0" (click)="inprogres(item)">></button>
+                    <button  class="but1" (click)="del(i)">x</button>
+                </div>
+               
+              
+            </div>
+            
+                <p class="option" >
+                    {{item.option}}
+                </p>
+            
+        </div>
+    
+    </div>
+    <div>inprogres
+    
+    
+    
+        <div class="inprogres" *ngFor="let item of listofprogres;let i=index">
+            <div class="progres">
+                <div>
+                    <p>{{i}}.{{item.name}}</p>
+                </div>
+                <div class="buts">
+                    <button class="but0" (click)="intodo(item)"><</button>
+                    <button  class="but0" (click)="indone(item)"> > </button>
+                </div>
+               
+              
+            </div>
+           
+                <p  class="option" >
+                    {{item.option}}
+                </p>
+            
+        </div>
+    </div>
+    <div>done
+        <div class="done" *ngFor="let item of listofdone;let i=index">
+            <div class="donn">
+                <div>
+                    <p>{{i}}.{{item.name}}</p>
+                </div>
+                <div class="buts">
+                    <button class="but0" (click)="inprogresagain(item)"><</button>
+                   
+                </div>
+               
+              
+            </div>
+            
+                <p class="option">
+                    {{item.option}}
+                </p>
+            
+        </div>
+    </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,138 @@
+.input {
+  display: flex;
+  justify-content: center;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 10vh;
+}
+.wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #141e50 10%,
+    #be24b4 98%,
+    #ff8570 100%
+  );
+
+  height: 100vh;
+}
+.input0 {
+  width: 50vw;
+  height: 4vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  font-size: large;
+}
+.search {
+  width: 10vw;
+  cursor: pointer;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #eb5689;
+  color: white;
+  font-size: large;
+}
+.todo {
+  margin-top: 3vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.todos {
+  margin-top: 5px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(135deg, #ffaa8567 10%, #b3315f 100%);
+  border-radius: 16px;
+  color: wheat;
+  font-size: large;
+  font-weight: bolder;
+}
+.inprogres {
+  margin-top: 5px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(135deg, #ffaa8567 10%, #b3315f 100%);
+  border-radius: 16px;
+  color: wheat;
+  font-size: large;
+  font-weight: bolder;
+}
+.progres {
+  margin-top: 3vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.done {
+  margin-top: 5px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(135deg, #ffaa8567 10%, #b3315f 100%);
+  border-radius: 16px;
+  color: wheat;
+  font-size: large;
+  font-weight: bolder;
+}
+.donn {
+  margin-top: 3vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.option {
+  background-color: #b96f00;
+  border-radius: 10px;
+  height: 25px;
+  width: 60px;
+  color: wheat;
+}
+.but0 {
+  width: 50px;
+  height: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #5f7cfa;
+  font-size: large;
+}
+
+.but0:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.but1 {
+  background-color: #ab3542;
+  width: 50px;
+  height: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  font-size: large;
+}
+.output {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5vh;
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+}
